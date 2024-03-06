@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">AkbarLaptops</string>
+
+    <string name="laptop_brand">Brand Laptop</string>
+    <string name="description">Deskripsi</string>
+    <string-array name="data_laptop">
+        <item>Apple</item>
+        <item>Dell</item>
+        <item>Acer</item>
+        <item>Lenovo</item>
+        <item>Asus</item>
+        <item>Microsoft</item>
+        <item>Hewlett-Packard</item>
+        <item>Axioo</item>
+        <item>Advan</item>
+        <item>MSI</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Laptop Apple menawarkan desain premium, performa mumpuni, dan layar berkualitas tinggi. Namun, harganya cukup mahal dan tidak upgradeable. Pilihan jenis laptop Apple yang tepat tergantung pada kebutuhan dan anggaran, seperti MacBook Air dengan kelebihan ringan dan tipis, performa mumpuni, baterai tahan lama, namun kekurangan nya port terbatas, layar tidak touchscreen, dan tidak upgradeable. Seri lain ada MacbookPro dengan performa lebih tinggi dari MacBook Air, layar lebih cerah. </item>
+        <item>Laptop Dell menawarkan berbagai pilihan jenis dan spesifikasi untuk beragam kebutuhan dan budget. XPS unggul di sisi premium dan performa tinggi (beberapa didukung kartu grafis NVIDIA GeForce RTX, Inspiron cocok untuk penggunaan sehari-hari terutama bagi kaum pelajar dan mahasiswa, Vostro berfokus pada keamanan dan bisnis, dan Alienware ditujukan khusus untuk gamer dan creator karena didukung kartu grafis NVIDIA GeForce RTX, termasuk sistem pendingin yg canggih.</item>
+        <item>Laptop Acer menawarkan pilihan yang beragam dengan harga yang kompetitif. Seri Aspire cocok untuk penggunaan sehari-hari terutama bagi kaum pelajar dan mahasiswa. Swift mengutamakan portabilitas karena bahannya yg ringan, baterai awet, cocok untuk penggunaan mobile. Nitro ditujukan untuk gamer karena didukung kartu grafis NVIDIA GeForce RTX, sistem pendingin yg optimal, keyboard RGB backlit. Terakhir ada TravelMate cocok untuk profesional, didesain untuk penggunaan bisnis dan profesional, durabilitas tinggi, keamanan terintegrasi, beberapa model bersertifikat MIL-STD 810G.</item>
+        <item>Laptop Lenovo menawarkan pilihan yang beragam untuk berbagai kebutuhan dan budget. ThinkPad unggul di sisi durabilitas dan keamanan, keyboard ergonomis, trackpoint signature, cocok untuk penggunaan profesional dan bisnis. IdeaPad terjangkau dan cocok untuk penggunaan sehari-hari, Harga terjangkau, pilihan spesifikasi yang luas, cocok untuk penggunaan sehari-hari, pelajar, dan mahasiswa. Yoga dengan desain inovatif engsel 360 derajat, layar sentuh, cocok untuk produktivitas, kreativitas, dan hiburan. Legion ditujukan khusus untuk gamer, dengan spesifikasi gahar, sistem pendingin optimal, keyboard RGB backlit.</item>
+        <item>Laptop Asus menawarkan pilihan yang beragam untuk berbagai kebutuhan dan budget. Zenbook mengutamakan desain tipis dan layar jernih karena menggunakan layar OLED. Vivobook harga terjangkau, pilihan spesifikasi yang luas, cocok untuk penggunaan sehari-hari, pelajar, dan mahasiswa. ROG Strix ditujukan khusus untuk gamer, karena dirancang khusus untuk bermain game, spesifikasi gahar, sistem pendingin optimal, keyboard RGB backlit. Chromebook berfokus pada harga terjangkau dan kemudahan penggunaan karena menggunakan sistem operasi Chrome OS yang ringan dan cepat, keamanan terintegrasi, cocok untuk penggunaan pelajar, mahasiswa, dan browsing internet..</item>
+        <item>Laptop Microsoft Surface menawarkan kombinasi desain premium, layar berkualitas tinggi, dan integrasi yang baik dengan ekosistem Microsoft. Namun, harganya tergolong premium dan penggunaannya lebih cocok untuk produktivitas sehari-hari dibanding penggunaan berat seperti gaming atau pekerjaan editing intensif. Seri nya ada Surface Laptop, laptop clamshell tipis dan ringan, ideal untuk penggunaan sehari-hari dan produktivitas. Surface Laptop Studio, laptop clamshell dengan engsel 360 derajat yang dapat dilipat ke mode tablet atau studio. Surface Pro, tablet detachable dengan kickstand dan keyboard opsional, cocok untuk penggunaan mobile dan produktivitas. Terakhir Surface Book, laptop detachable dengan keyboard yang dapat dilepas, menawarkan performa lebih kuat dibanding Surface Pro.</item>
+        <item>Laptop HP menawarkan pilihan yang beragam dengan harga yang kompetitif. Spectre dan ENVY unggul di sisi desain premium dan performa tinggi. Pavilion memiliki harga terjangkau, pilihan spesifikasi yang luas, cocok untuk penggunaan sehari-hari, pelajar, dan mahasiswa. ProBook &amp; EliteBook berfokus pada durabilitas dan keamanan, beberapa model bersertifikat MIL-STD 810G. Terakhir OMEN yang dirancang khusus untuk bermain game, spesifikasi gahar, sistem pendingin optimal, keyboard RGB backlit.</item>
+        <item>Laptop Axioo, laptop asli Indonesia, menawarkan spek tinggi dengan harga terjangkau dibanding laptop sekelas nya, terutama di seri Pongo yg dikhususkan untuk para gamer karena didukung oleh processor kelas tinggi dan didukung kartu grafis NVIDIA GeForce RTX, backlit keyboard, sistem pendingin yg cukup baik. Seri MyBook dan Hype yg ditujukan untuk para pelajar dan mahasiswa yg fokus di daily-basis activity, namun beberapa nya mendukung gaming tipis-tipis.</item>
+        <item>Laptop Advan, laptop asli Indonesia yg pernah mengguncang dunia per-laptop-an dari segala kalangan sejak mereka meluncurkan produk laptop Advan Soulmate prosesor Intel N4020 dengan harga Hampir Setengah dari Laptop lain dengan spek serupa. Seri Work, terutama Workplus yg betul-betul membuat heboh produsen dan konsumen laptop, menawarkan spesifikasi tinggi dengan harga miring. Walaupun tidak sebagus laptop sebelah, secara build quality, asuransi yg tidak selama produk sebelah, namun Advan mampu membuat sebuah guncangan dalam pasar laptop yg sedang naik fasenya, dan cukup merubah persepsi masyarakat akan barang lokal</item>
+        <item>Laptop MSI menjadi pilihan tepat bagi kita yang mencari performa gahar untuk gaming, editing konten, atau pekerjaan berat. Namun, perlu dipertimbangkan harga yang umumnya premium, bobot dan ketebalan, serta daya tahan baterai yang mungkin tidak sebaik laptop lain. Di Entry Level ada seri GL dan Modern, Mid-Range ada GE mid-range dan GP, High-End ada Titan GT dan GE high-end.</item>
+    </string-array>
+
+<!--    <string-array name="data_photo">-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg/640px-MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg</item>-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Dell_Vostro_14_5000_Series_Laptop.jpg/640px-Dell_Vostro_14_5000_Series_Laptop.jpg</item>-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Acer_Nitro_5.png/640px-Acer_Nitro_5.png</item>-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Lenovo_IdeaPad_Flex14_laptop_%28rightside%29.jpg/640px-Lenovo_IdeaPad_Flex14_laptop_%28rightside%29.jpg</item>-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/ASUS_X556U_20170914.jpg/640px-ASUS_X556U_20170914.jpg</item>-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Microsoft_Surface_Pro_7.jpg/640px-Microsoft_Surface_Pro_7.jpg</item>-->
+<!--        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/HP_ENVY_14_eb0001nx_Laptop.jpg/640px-HP_ENVY_14_eb0001nx_Laptop.jpg</item>-->
+<!--        <item>https://awsimages.detik.net.id/community/media/visual/2022/10/14/axioo-cyberbook-2.jpeg?w=1200</item>-->
+<!--        <item>https://awsimages.detik.net.id/community/media/visual/2023/08/26/advan-workplay.jpeg?w=1200</item>-->
+<!--        <item>https://www.akupaham.com/wp-content/uploads/2019/05/laptop-msi-terbaru.png</item>-->
+<!--    </string-array>-->
+
+    <integer-array name="data_photo">
+        <item>@drawable/macbook_pro</item>
+        <item>@drawable/dell_vostro</item>
+        <item>@drawable/acer_nitro</item>
+        <item>@drawable/lenovo_ideapad</item>
+        <item>@drawable/asus</item>
+        <item>@drawable/microsoft_surface</item>
+        <item>@drawable/hp_envy</item>
+        <item>@drawable/axioo_cyberbook</item>
+        <item>@drawable/advan_workplay</item>
+        <item>@drawable/msi</item>
+
+    </integer-array>
+
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+</resources>
