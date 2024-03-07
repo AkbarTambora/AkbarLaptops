@@ -1,6 +1,5 @@
 package com.example.akbarlaptops
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,42 +7,37 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListLaptopAdapter(private val listLaptop: ArrayList<Laptop>) : RecyclerView.Adapter<ListLaptopAdapter.ListViewHolder>() {
 
-    private lateinit var onItemClickCallback: OnItemClickCallback
+class ListLaptopAdapter(private val laptops: List<Laptop>) : RecyclerView.Adapter<ListLaptopAdapter.LaptopViewHolder>() {
 
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback
+    private var itemClickListener: ((Laptop) -> Unit)? = null
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaptopViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_laptop, parent, false)
+        return LaptopViewHolder(view)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_laptop, parent, false)
-        return ListViewHolder(view)
+    override fun onBindViewHolder(holder: LaptopViewHolder, position: Int) {
+        val laptop = laptops[position]
+        holder.bind(laptop)
     }
 
-    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, description, photo) = listLaptop[position]
-        holder.imgPhoto.setImageResource(photo)
-        holder.tvName.text = name
-        holder.tvDescription.text = description
+    override fun getItemCount(): Int = laptops.size
 
-//        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listLaptop[holder.adapterPosition]) }
-        holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, DetailActivity::class.java)
-            intent.putExtra("key_laptop", listLaptop[holder.adapterPosition])
-            holder.itemView.context.startActivity(intent)
+    fun setOnItemClickListener(listener: (Laptop) -> Unit) {
+        itemClickListener = listener
+    }
+
+    inner class LaptopViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
+        private val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
+        private val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+
+        fun bind(laptop: Laptop) {
+            imgPhoto.setImageResource(laptop.photo)
+            tvName.text = laptop.name
+            tvDescription.text = laptop.description
+            itemView.setOnClickListener { itemClickListener?.invoke(laptop) }
         }
-    }
-
-    override fun getItemCount(): Int = listLaptop.size
-
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
-        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
-    }
-
-    interface OnItemClickCallback {
-        fun onItemClicked(data: Laptop)
     }
 }

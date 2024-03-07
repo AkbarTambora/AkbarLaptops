@@ -8,4 +8,4 @@ data class Laptop(
     val name: String,
     val description: String,
     val photo: Int
-): Parcelable
+) : Parcelable
