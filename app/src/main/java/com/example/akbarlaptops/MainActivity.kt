@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         rvLaptops = findViewById(R.id.rv_laptops)
         rvLaptops.setHasFixedSize(true)
 
-        list.addAll(getListHeroes())
+        list.addAll(getListLaptops())
         showRecyclerList()
 
     }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Kamu memilih " + laptop.name, Toast.LENGTH_SHORT).show()
     }
 
-    private fun getListHeroes(): ArrayList<Laptop> {
+    private fun getListLaptops(): ArrayList<Laptop> {
         val dataLaptop = resources.getStringArray(R.array.data_laptop)
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
@@ -58,6 +58,8 @@ class MainActivity : AppCompatActivity() {
         }
         return listLaptop
     }
+
+
 
     private fun showRecyclerList() {
         rvLaptops.layoutManager = LinearLayoutManager(this)

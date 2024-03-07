@@ -1,5 +1,6 @@
 package com.example.akbarlaptops
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,7 +27,12 @@ class ListLaptopAdapter(private val listLaptop: ArrayList<Laptop>) : RecyclerVie
         holder.tvName.text = name
         holder.tvDescription.text = description
 
-        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listLaptop[holder.adapterPosition]) }
+//        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listLaptop[holder.adapterPosition]) }
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, DetailActivity::class.java)
+            intent.putExtra("key_laptop", listLaptop[holder.adapterPosition])
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = listLaptop.size
